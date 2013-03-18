@@ -359,6 +359,12 @@ obj-$(CONFIG_MACH_VILLEC2) += board-villec2-mmc.o board-villec2-wifi.o htc_wifi_
 obj-$(CONFIG_MACH_VILLEC2) += htc_util.o
 obj-$(CONFIG_MACH_VILLEC2) += board-villec2-audio.o
 
+obj-$(CONFIG_MACH_SHOOTER_U) += board-shooter_u.o
+obj-$(CONFIG_MACH_SHOOTER_U) += board-shooter_u-keypad.o
+obj-$(CONFIG_MACH_SHOOTER_U) += board-shooter_u-audio.o
+obj-$(CONFIG_MACH_SHOOTER_U) += htc_bdaddress.o board-shooter_u-rfkill.o
+obj-$(CONFIG_MACH_SHOOTER_U) += board-shooter_u-mmc.o board-shooter_u-wifi.o
+
 CFLAGS_msm_vibrator.o += -Idrivers/staging/android
 CFLAGS_board-9615.o += -Idrivers/usb/gadget
 

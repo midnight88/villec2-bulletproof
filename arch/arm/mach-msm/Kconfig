@@ -890,6 +890,13 @@ config MACH_FSM9XXX_SURF
 	  chipset based SURF evaluation board and
 	  FFA board.
 
+config MACH_SHOOTER_U
+        depends on ARCH_MSM8X60
+        default n
+        bool "Shooter_U"
+        select SMP_PARALLEL_START
+        help
+          Support for the Shooter U device.
 endmenu
 
 config MSM_STACKED_MEMORY
